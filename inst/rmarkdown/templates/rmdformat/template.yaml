@@ -1,0 +1,4 @@
+name: rmdformat
+description: >
+   Custom format for my rmarkdown documents
+create_dir: FALSE
