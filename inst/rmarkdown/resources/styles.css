@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6, nav, footer, .chapter-nav {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* Make summarytools table use monospace font */
+.st-table {
+  font-family: monospace;
+}
 
 /* Fix gt tables */
 .gt_table {
