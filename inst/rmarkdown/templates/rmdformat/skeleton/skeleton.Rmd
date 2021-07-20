@@ -49,6 +49,8 @@ library(patchwork)
 library(latex2exp)
 library(kableExtra)
 
+options(knitr.kable.NA = '')
+
 # For nice dataframe summaries
 library(summarytools)
 st_options(
