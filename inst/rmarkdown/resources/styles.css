@@ -55,9 +55,9 @@ a {
 
 .rmdbox {
   margin: 1rem calc(-2px - 0.5em);
-  padding: 1em 1em 1em 1em;
+  padding: 1em 1em 3ex 6em;
   border: 2px solid #ccc;
-  background: #f8f8f8 25px 25px no-repeat;
+  background: #f8f8f8;
 }
 
 .rmdbox > *:last-child, .rmdnote > *:last-child, .rmdcaution > *:last-child, .rmdimportant > *:last-child, .rmdtip > *:last-child, .rmdwarning > *:last-child {
@@ -74,8 +74,8 @@ a {
 .rmdcaution, .rmdimportant, .rmdnote, .rmdtip, .rmdwarning {
   margin: 1rem calc(-2px - 0.5em);
   border: 2px solid #ccc;
-  padding: 1em 1em 1em 6em;
-  background: #f8f8f8 25px 25px no-repeat;
+  padding: 1em 1em 3ex 6em;
+  background: #f8f8f8 25px calc(10% + 10px) no-repeat;
 }
 
 .rmdcaution {
