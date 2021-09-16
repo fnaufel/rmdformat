@@ -5,24 +5,7 @@ author: 'fnaufel'
 email: 'https://fnaufel.github.io/'
 date: ' (v. `r format(Sys.Date(), "%d/%m/%Y")`)'
 lang: 'pt'
-output: 
-  rmdformat::fnaufel_rmd_format:
-    theme: readable # https://bootswatch.com/3/readable/
-    highlight: pygment
-    toc: true
-    toc_depth: 2
-    toc_float: false
-    number_sections: true
-    fig_caption: true
-    df_print: paged
-    self_contained: true
-    code_download: true
-    code_folding: show
-    keep_md: false
-    # includes:
-    #   in_header: header.html
-    #   before_body: doc_prefix.html
-    #   after_body: doc_suffix.html
+output: rmdformat::fnaufel_rmd_format
 ---
 
 ```{r setup, include=FALSE}
@@ -164,26 +147,6 @@ embed_yt <- function(code) {
   
 }
 
-```
-
-```{js javascript-init, echo=FALSE}
-
-// Make off-site links open in a new window/tab
-function changeTargets() {
-  $("a").attr(
-    "target", function() {
-      // Load local links locally
-      if (this.host == location.host) return "_self"
-      // Load off-site links in a new window
-      else return "_blank";
-    }
-  );
-}
-
-// Execute when document is ready
-$(
-  changeTargets
-)
 ```
 
 

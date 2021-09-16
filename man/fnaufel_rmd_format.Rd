@@ -4,13 +4,92 @@
 \alias{fnaufel_rmd_format}
 \title{Custom HTML template}
 \usage{
-fnaufel_rmd_format(toc = TRUE, ...)
+fnaufel_rmd_format(
+  toc = TRUE,
+  toc_depth = 2,
+  toc_float = FALSE,
+  number_sections = TRUE,
+  anchor_sections = TRUE,
+  section_divs = TRUE,
+  fig_width = 7,
+  fig_height = 5,
+  fig_retina = 2,
+  fig_caption = TRUE,
+  dev = "png",
+  df_print = "paged",
+  code_folding = "show",
+  code_download = TRUE,
+  self_contained = TRUE,
+  theme = "readable",
+  highlight = "pygment",
+  mathjax = "default",
+  template = "default",
+  extra_dependencies = NULL,
+  css = system.file("rmarkdown/resources/styles.css", package = "rmdformat"),
+  includes = rmarkdown::includes(in_header =
+    system.file("rmarkdown/resources/header.html", package = "rmdformat")),
+  keep_md = FALSE,
+  lib_dir = NULL,
+  md_extensions = NULL,
+  pandoc_args = NULL,
+  ...
+)
 }
 \arguments{
-\item{toc}{should a table of contents be displayed?}
+\item{toc}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
 
-\item{...}{additional arguments provided to \@code{html_document}}
+\item{toc_depth}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{toc_float}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{number_sections}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{anchor_sections}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{section_divs}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{fig_width}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{fig_height}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{fig_retina}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{fig_caption}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{dev}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{df_print}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{code_folding}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{code_download}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{self_contained}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{theme}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{highlight}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{mathjax}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{template}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{extra_dependencies}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{css}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{includes}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{keep_md}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{lib_dir}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{md_extensions}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{pandoc_args}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
+
+\item{...}{see \link[rmarkdown:html_document]{rmarkdown::html_document}}
 }
 \description{
-Loads additional style and template file
+Loads additional style and configs
 }
