@@ -24,10 +24,13 @@ opts_chunk$set(
 # Supress crayon output
 options(crayon.enabled = FALSE)
 
-# Avoid scientific notation and use a comma as decimal separator
 options(
+  # Avoid scientific notation
   scipen = 15,
-  OutDec = ','
+  # Use a comma as decimal separator
+  OutDec = ',',
+  # Number of decimal digits for numbers produced by inline R code
+  fmdigits = 2
 )
 
 # Useful libraries
@@ -49,10 +52,11 @@ st_options(
 # Tidy!
 library(tidyverse)
 
-# Useful functions
+# Useful functions provided by the rmdformat package
+# 
 # Execute 
 # 
-# cat(system.file("rmarkdown/resources/common.R", package = "rmdformat"))
+#   cat(system.file("rmarkdown/resources/common.R", package = "rmdformat"))
 # 
 # to see the location of the file
 source(

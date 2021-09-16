@@ -29,7 +29,13 @@ theme_set(
 # Format a number with thousand separators (default point)
 # and decimal comma enclosed in curly braces for LaTeX printing.
 # CAREFUL: if called outside math mode, will print the braces!
-fm <- function(x, digits = 4, big = '.', decimal = '{,}', ...) {
+fm <- function(
+  x,
+  digits = getOption('fmdigits', default = 4),
+  big = '.',
+  decimal = '{,}',
+  ...
+) {
   if (!is.numeric(x)) {
     x
   } else {
