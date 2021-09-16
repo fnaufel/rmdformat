@@ -60,7 +60,7 @@ a {
 
 .rmdbox {
   margin: 1rem calc(-2px - 0.5em);
-  padding: 1em 1em 3ex 6em;
+  padding: 1em 1em 3ex 1em;
   border: 2px solid #ccc;
   background: #f8f8f8;
 }
