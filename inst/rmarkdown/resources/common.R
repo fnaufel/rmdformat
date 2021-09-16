@@ -39,7 +39,7 @@ fm <- function(
   if (!is.numeric(x)) {
     x
   } else {
-    if (x != floor(x)) {
+    if (any(x != floor(x))) {
       # floating point
       formatC(
         x,
