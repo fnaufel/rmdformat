@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lexend&family=JetBrains+Mono&display=swap');
+
 
 body {
   font-family: 'Lexend', sans-serif;
 }
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 
 h1, h2, h3, h4, h5, h6, nav, footer, .chapter-nav {
   font-family: 'Roboto', sans-serif;
@@ -11,17 +17,17 @@ h1, h2, h3, h4, h5, h6, nav, footer, .chapter-nav {
 
 /* Fix font in paged data frames */
 .pagedtable tbody {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 /* Fix font in tables */
 table.lightable-paper tbody {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: 'JetBrains Mono', monospace; !important;
 }
 
 /* Make summarytools table use monospace font */
 .st-table {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 /* Fix gt tables */
