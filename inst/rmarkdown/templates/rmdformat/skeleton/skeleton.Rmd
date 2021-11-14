@@ -47,9 +47,15 @@ options(knitr.kable.NA = '')
 library(summarytools)
 st_options(
   plain.ascii = FALSE,
-  dfSummary.varnumbers = FALSE,
   dfSummary.style = 'grid',
-  dfSummary.graph.magnif = .75
+  dfSummary.varnumbers = FALSE,
+  dfSummary.valid.col = FALSE,
+  dfSummary.graph.col = is_html_output(),
+  headings = FALSE,
+  dfSummary.graph.magnif = 1,
+  # tmp.img.dir = 'dfimg',
+  lang = 'pt',
+  subtitle.emphasis = FALSE
 )
 
 # Tidy!
