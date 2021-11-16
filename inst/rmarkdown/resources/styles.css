@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lexend&family=JetBrains+Mono&display=swap');
 
-
 body {
   font-family: 'Lexend', sans-serif;
 }
@@ -68,7 +67,8 @@ a {
   margin: 1rem calc(-2px - 0.5em);
   padding: 1em 1em 3ex 1em;
   border: 2px solid #ccc;
-  background: #f8f8f8;
+  background: #fcfcfc;
+  border-radius: 10px;
 }
 
 .rmdbox > *:last-child, .rmdnote > *:last-child, .rmdcaution > *:last-child, .rmdimportant > *:last-child, .rmdtip > *:last-child, .rmdwarning > *:last-child {
@@ -86,7 +86,8 @@ a {
   margin: 1rem calc(-2px - 0.5em);
   border: 2px solid #ccc;
   padding: 1em 1em 3ex 6em;
-  background: #f8f8f8 25px calc(10% + 10px) no-repeat;
+  background: #fcfcfc 25px calc(10% + 10px) no-repeat;
+  border-radius: 10px;
 }
 
 .rmdcaution {
@@ -159,7 +160,10 @@ h2 > .header-section-number {
 .level3 > h3 {
   font-weight: 500;
   font-style: italic;
-  border-bottom: 0;
+  border-bottom: 2px solid;
+  margin-top: .8em;
+  margin-bottom: .8em;
+  padding-bottom: 5px;
 }
 
 h3 > .header-section-number {
@@ -197,40 +201,6 @@ h3 > .header-section-number {
   margin-top: 0;
 }
 
-
-/* Misc */
-
-/*
-p.caption {
-  color: #777;
-  margin-top: 10px;
-}
-
-p code {
-  white-space: inherit;
-}
-
-pre {
-  word-break: normal;
-  word-wrap: normal;
-}
-
-pre code {
-  white-space: inherit;
-}
-
-blockquote > p:last-child {
-  text-align: right;
-}
-
-blockquote > p:first-child {
-  text-align: inherit;
-}
-
-.book .book-body .page-wrapper .page-inner section.normal strong {
-  font-weight: 600;
-}
-*/
 
 /* Utilities */
 
@@ -276,7 +246,8 @@ blockquote > p:first-child {
 }
 
 /* highlight */
-.hl{
+.hl,
+.hl code{
   background-color: yellow;
 }
 
@@ -284,3 +255,37 @@ blockquote > p:first-child {
   border: solid 2px #f1f1f1;
 }
 
+
+/* Misc */
+
+/*
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+
+p code {
+  white-space: inherit;
+}
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+blockquote > p:last-child {
+  text-align: right;
+}
+
+blockquote > p:first-child {
+  text-align: inherit;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal strong {
+  font-weight: 600;
+}
+*/
